@@ -1,0 +1,3 @@
+Hi there!
+
+Here I am trying to show my understanding of layout by a beginner; I do not use third-party libraries or frameworks for writing HTML. I use automation on gulp 4 written by me personally, it is very simple and does not contain complex tasks, it exists to compile sass and restart the browser. I am writing in sass instead of vanilla css in order to learn this tool as quickly as possible, since it is not difficult to write on vanilla css. I am not experienced yet, but I will try to make a working version of the layout. Thanks for your attention.
