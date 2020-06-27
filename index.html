@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/main.css">
     <title>PiedPiperCoin</title>
 </head>
@@ -14,30 +15,34 @@
                 <nav class="main-nav">
                     <ul class="main-nav_list">
                         <li class="main-nav_list-item">
-                            <a class="main-nav_link" href="#">
+                            <a class="main-nav_link" href="#problem_anchor">
                                 the problem
                             </a>
                         </li>
                         <li class="main-nav_list-item">
-                            <a class="main-nav_link" href="#">
+                            <a class="main-nav_link" href="#introduction_anchor">
                                 PiedPiperCoin
                             </a>
                         </li>
                         <li class="main-nav_list-item">
-                            <a class="main-nav_link" href="#">
+                            <a class="main-nav_link" href="#team_anchor">
                                 the team
                             </a>
                         </li>
                     </ul>
                 </nav>
+                <nav class="mobile-nav">
+                    <span class="mobile-nav_boorger"></span>
+                </nav>
             </div>
         </div>
     </header>
-    <main class="main">
+    <main class="main-content">
         <section class="preview">
             <h1 calss="preview_heading">PiperNet Is Here</h1>
         </section>
-        <section class="problem">
+        <section id="problem" class="problem">
+            <span class="anchor" id="problem_anchor"></span>
             <div class="container">
                 <header class="problem_header">
                     <h2 class="problem_heading">The Problem</h2>
@@ -68,17 +73,20 @@
                 </p>
             </div>
         </section>
-        <section class="introduction">
+        <section  class="introduction">
+            <span class="anchor" id="introduction_anchor"></span>
             <div class="container">
                 <header class="introduction_header">
                     <h2 class="introduction_heading">
                         Introducing PiedPiperCoin
                     </h2>
                 </header>
-                <img src="./assets/img/logo.svg" alt="PPC full logo" class="introduction_logo">
-                <p class="introduction_regular-text">
-                    Pied Piper's new internet is built for users, by users. You supply the storage, compute, and networking resources that power our entire decentralized web.
-                </p>
+                <div class="introduction_wrapper">
+                    <img src="./assets/img/logo.svg" alt="PPC full logo" class="introduction_logo">
+                    <p class="introduction_regular-text introduction_wrapped_text">
+                        Pied Piper's new internet is built for users, by users. You supply the storage, compute, and networking resources that power our entire decentralized web.
+                    </p>
+                </div>
                 <p class="introduction_regular-text">
                     Now there's a way to give credit where credit is due. Compute credit, that is! The more you share your device resources, the more PiedPiperCoin you receive.
                 </p>
@@ -88,6 +96,7 @@
             </div>
         </section>
         <section class="team">
+            <span class="anchor" id="team_anchor"></span>
             <div class="container">
                 <div class="team_wrapper">
                     <div class="team_personal-card">

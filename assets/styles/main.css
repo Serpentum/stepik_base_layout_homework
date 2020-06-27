@@ -13,12 +13,23 @@ a {
 html {
   font-family: Roboto,sans-serif
 }
+.main-content {
+  padding-top: 95px
+}
 .container {
   padding: 25px 55px;
   width: 1219px;
   margin: 0 auto
 }
+.anchor {
+  display: block;
+  position: relative;
+  top: -95px;
+  visibility: hidden
+}
 .main-header {
+  position: fixed;
+  width: 100%;
   background: #007765
 }
 .main-header_wrapper {
@@ -51,6 +62,34 @@ html {
 .main-nav_link {
   color: #fff
 }
+.mobile-nav {
+  display: none
+}
+.mobile-nav_boorger {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: #fff
+}
+.mobile-nav_boorger::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background: #fff
+}
+.mobile-nav_boorger::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background: #fff
+}
 .preview {
   height: 403px;
   display: flex;
@@ -58,6 +97,7 @@ html {
   justify-content: center;
   color: #fff;
   font-size: 4.5rem;
+  text-align: center;
   background-image: url(../../assets/img/bg_preview.png);
   background-size: cover;
   background-position: center;
@@ -99,8 +139,16 @@ html {
   color: #007765;
   text-align: center
 }
+.introduction_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 50px;
+  font-family: Roboto,sans-serif;
+  font-size: 2rem;
+  color: #000
+}
 .introduction_logo {
-  float: left;
   padding-right: 48px
 }
 .introduction_regular-text {
@@ -108,6 +156,9 @@ html {
   font-family: Roboto,sans-serif;
   font-size: 2rem;
   color: #000
+}
+.introduction_wrapped_text {
+  padding: 0
 }
 .team {
   background: #eee
@@ -134,4 +185,25 @@ html {
 }
 .main-footer_more-padding {
   padding: 48px 350px
+}
+@media (max-width:1219px) {
+  .container {
+    width: 100%
+  }
+  .main-footer_more-padding {
+    padding: 20px 100px
+  }
+}
+@media (max-width:1190px) {
+  .team_wrapper {
+    justify-content: center
+  }
+}
+@media (max-width:830px) {
+  .main-nav {
+    display: none
+  }
+  .mobile-nav {
+    display: block
+  }
 }

@@ -1,4 +1,6 @@
 .main-header
+    position: fixed
+    width: 100%
     background: $primaryThemeCollor
 
     &_wrapper
@@ -34,4 +36,32 @@
 
     &_link
         color: $secondaryTextColor
+
+.mobile-nav
+    display: none
+    &_boorger
+        position: relative
+        display: block
+        width: 50px
+        height: 5px
+        background: #fff
+
+        &::before
+            content: ''
+            position: absolute
+            bottom: 10px
+            left: 0
+            width: 50px
+            height: 5px
+            background: #fff
+
+        &::after
+            content: ''
+            position: absolute
+            bottom: -10px
+            left: 0
+            width: 50px
+            height: 5px
+            background: #fff
+            
 
