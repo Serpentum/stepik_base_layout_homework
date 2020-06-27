@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+ul {
+  list-style: none
+}
+a {
+  text-decoration: none;
+  color: #000
+}
+html {
+  font-family: Roboto,sans-serif
+}
+.container {
+  padding: 25px 55px;
+  width: 1219px;
+  margin: 0 auto
+}
+.main-header {
+  background: #007765
+}
+.main-header_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center
+}
+.main-nav_list {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap
+}
+.main-nav_list-item {
+  padding: 0 10px
+}
+.main-nav_list-item::after {
+  content: '|';
+  padding-left: 10px
+}
+.main-nav_list-item:last-child::after {
+  display: none
+}
+.main-nav_list-item:last-child {
+  padding-right: 0
+}
+.main-nav_link {
+  color: #fff
+}
+.preview {
+  height: 403px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 4.5rem;
+  background-image: url(../../assets/img/bg_preview.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.problem_heading {
+  padding: 20px 0;
+  font-family: Roboto,sans-serif;
+  font-size: 4rem;
+  color: #007765;
+  text-align: center
+}
+.content_regular-text {
+  padding-bottom: 50px;
+  font-family: Roboto,sans-serif;
+  font-size: 2rem;
+  color: #000
+}
+.content_breack-line {
+  display: block
+}
+.hero {
+  background-image: url(../../assets/img/bg_hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  line-height: 4.3rem
+}
+.hero_more-padding {
+  padding: 128px
+}
+.introduction_heading {
+  padding: 20px 0;
+  font-family: Roboto,sans-serif;
+  font-size: 4rem;
+  color: #007765;
+  text-align: center
+}
+.introduction_logo {
+  float: left;
+  padding-right: 48px
+}
+.introduction_regular-text {
+  padding-bottom: 50px;
+  font-family: Roboto,sans-serif;
+  font-size: 2rem;
+  color: #000
+}
+.team {
+  background: #eee
+}
+.team_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+.team_personal-card {
+  text-align: center;
+  width: 300px;
+  margin: 30px
+}
+.team_person-name {
+  color: #007765;
+  padding: 10px 0 2px
+}
+.main-footer {
+  text-align: center;
+  background: #333;
+  color: #fff
+}
+.main-footer_more-padding {
+  padding: 48px 350px
+}

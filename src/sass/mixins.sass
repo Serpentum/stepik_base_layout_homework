@@ -1,0 +1,25 @@
+//font mixins
+@mixin default-text-settings
+    padding-bottom: 50px
+    font:
+        family: Roboto, sans-serif
+        size: $defaultContentFontSize
+    color: $defaultTextColor
+        
+
+@mixin default-heading-settings
+    padding: 20px 0
+    font:
+        family: Roboto, sans-serif
+        size: $defaultHeadingFontSize
+    color: $primaryThemeCollor
+    text-align: center
+
+//other settings
+@mixin interruptions-background($path)
+    background: 
+        image: url($path)
+        size: cover
+        position: center
+        repeat: no-repeat
+        
